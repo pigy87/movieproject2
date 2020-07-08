@@ -1,0 +1,3 @@
+apikey=666bc8478249be46838803dea2b5921a;
+token=eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NjZiYzg0NzgyNDliZTQ2ODM4ODAzZGVhMmI1OTIxYSIsInN1YiI6IjVmMDVhZjlhZDVmZmNiMDAzMzdmNDJlZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Grd_K9GfRgypHg9Pg1j1jD5ZxmKmnPXMQ6JFlQWRbdo;	
+example call -https://api.themoviedb.org/3/movie/550?api_key=666bc8478249be46838803dea2b5921a
