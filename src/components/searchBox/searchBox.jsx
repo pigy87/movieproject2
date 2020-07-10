@@ -19,10 +19,7 @@ class SearchBox extends Component {
     }
 
     handleButton() {
-      this.props.takeTerm(this.state.value)  
-      
-      //console.log(this.state.value)
-        
+      this.props.searchForMovies(this.state.value);        
     }
 
     

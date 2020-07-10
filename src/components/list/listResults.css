@@ -1,0 +1,10 @@
+.lis{
+    list-style: none;
+    font-size: large;
+    font-family: 'Comic Sans MS,Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.lis:hover{
+    color: cornflowerblue;
+}
