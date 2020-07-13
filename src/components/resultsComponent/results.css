@@ -1,23 +1,24 @@
-#searchResultsTitle{
-    color:coral;
+#searchResultsTitle {
+    color: coral;
     margin-left: 20px;
-    
-    
-}
-ul{
-    text-align: left;
-    
 }
 
-.resultsAndEachMovie{
+ul {
+    text-align: left;
+}
+
+.resultsAndEachMovie {
     display: flex;
     flex-direction: row;
-
 }
 
-.resultsList{
+.resultsList {
     display: flex;
     flex-direction: column;
     text-align: left;
-    
+    width: 50%;
+}
+
+.eachMovie {
+    width: 50%;
 }

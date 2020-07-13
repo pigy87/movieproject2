@@ -22,6 +22,7 @@ class App extends React.Component {
   }
 
   searchForMovies(term){
+   
     this.takeTerm(term);
     databaseApi.getListsMovies()
     .then(data=>{

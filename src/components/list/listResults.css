@@ -1,10 +1,20 @@
-.lis{
+.lis {
     list-style: none;
     font-size: large;
     font-family: 'Comic Sans MS,Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
 }
 
-.lis:hover{
+.lis:hover {
     color: cornflowerblue;
+}
+
+.litlePictures {
+    width: 30px;
+    height: 20px;
+    padding-right: 5px;
+}
+
+.picturesAndLis {
+    display: flex;
+    padding: 5px 0px 5px 0px;
 }

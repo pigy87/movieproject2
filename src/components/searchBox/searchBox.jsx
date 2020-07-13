@@ -13,9 +13,12 @@ class SearchBox extends Component {
     }
 
     handleOnChange(e){
+        //this.props.searchForMovies(e.target.value); 
+       
         this.setState({
             value:e.target.value
         })
+        
     }
 
     handleButton() {

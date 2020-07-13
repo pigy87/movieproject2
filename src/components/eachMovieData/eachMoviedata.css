@@ -1,0 +1,43 @@
+#moviedataTitle {
+    color: coral;
+    font-family: 'Comic Sans MS,Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#movieDataLis {
+    margin-top: 25px;
+    text-align: left;
+}
+
+#moviedataLis>ul>li {
+    list-style: none;
+    color: black;
+    font-family: 'Comic Sans MS,Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 0%;
+}
+
+.prefix {
+    font-size: 22px;
+    padding-right: 5px;
+}
+
+#overViewDiv {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#overViewtitle {
+    font-size: x-large;
+    color: coral;
+    font-family: 'Comic Sans MS,Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+#overViewP {
+    font-size: medium;
+}
