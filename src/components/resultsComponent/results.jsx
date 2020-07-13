@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ListResults from '../list/listResults';
+import ListResults from '../RenderListResults/listResults';
 import './results.css';
-import EachMovieData from '../eachMovieData/eachMovieData';
+import EachMovieData from '../RenderEachMovieData/eachMovieData';
 
 class Results extends Component {
     constructor(props) {
@@ -30,7 +30,7 @@ class Results extends Component {
 
     render() {
 
-        console.log(this.props.results);
+     //   console.log(this.props.results);
         //console.log(this.state.selectedMovie)
 
         return (

@@ -1,0 +1,14 @@
+#landingUl {
+    display: flex;
+    flex-direction: row;
+}
+
+.landingLis {
+    font-size: 25px;
+    color: coral;
+    list-style: none;
+}
+
+.landingLis:hover {
+    color: 'blue'
+}

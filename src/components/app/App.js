@@ -4,45 +4,42 @@ import Header from '../headerComponent/header';
 import SearchBox from '../searchBox/searchBox';
 import databaseApi from '../../util/databaseapi';
 import Results from '../resultsComponent/results';
+import LandingPage from '../LandingPage/landingPage';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = ({     
-      searchResults:null
+    this.state = ({
+      searchResults: null
     })
 
-    this.takeTerm = this.takeTerm.bind(this);
-    this.searchForMovies=this.searchForMovies.bind(this);
-    this.print=this.print.bind(this);
-  }
-
-  takeTerm(term) {
-    databaseApi.queryWord(term);
-  }
-
-  searchForMovies(term){
    
-    this.takeTerm(term);
-    databaseApi.getListsMovies()
-    .then(data=>{
-      this.setState({
-        searchResults:data
+    this.searchForMovies = this.searchForMovies.bind(this);
+    this.print = this.print.bind(this);
+  }
+ 
+  searchForMovies(term) {
+    databaseApi.getListsMovies(term)
+      .then(data => {
+        this.setState({
+          searchResults: data
+        })
       })
-    })
   }
 
-  print(){
+  print() {
     console.log(this.state.searchResults)
   }
 
   render() {
-   //this.print()
+    //this.print()
+
     return (
       <div className="App">
         <Header />
+        <LandingPage/>
         <SearchBox searchForMovies={this.searchForMovies} />
-        <Results results={this.state.searchResults}/>
+        <Results results={this.state.searchResults} />
       </div>
     );
   }

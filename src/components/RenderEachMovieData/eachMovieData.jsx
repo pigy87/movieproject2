@@ -1,5 +1,5 @@
 import React from 'react';
-import '../eachMovieData/eachMoviedata.css';
+import './eachMoviedata.css';
 
 
 class EachMovieData extends React.Component {
@@ -19,7 +19,7 @@ class EachMovieData extends React.Component {
             style={backGround}>                
                 <h2 id={'moviedataTitle'}> Movie Data!</h2>
                 <div id={'moviedataLis'}>
-                    <ul id={'movieDataLis'}>
+                    <ul id={'movieDataUl'}>
                         <li key={this.props.data.id + '1'}><span className={'prefix'}>Title:</span>{this.props.data.title}</li>
                         <li key={this.props.data.id + '2'}><span className={'prefix'}>Relesed:</span>{this.props.data.release_date}</li>
                         <li key={this.props.data.id + '3'}><span className={'prefix'}>Rate:</span>{this.props.data.vote_average}</li>
