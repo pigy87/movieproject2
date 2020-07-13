@@ -1,3 +1,8 @@
+#moviedata {
+    background-image: url("https://image.tmdb.org/t/p/w500/oRyVYIqegDB5rWjfloeu1Zgk332.jpg");
+    opacity: 0.3;
+}
+
 #moviedataTitle {
     color: coral;
     font-family: 'Comic Sans MS,Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -16,6 +21,7 @@
     width: 50%;
     margin: 0 auto;
     padding-left: 0%;
+    opacity: 1;
 }
 
 .prefix {

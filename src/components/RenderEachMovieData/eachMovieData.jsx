@@ -15,8 +15,7 @@ class EachMovieData extends React.Component {
 
      
         return (
-            <div id={'moviedata'}
-            style={backGround}>                
+            <div id={'moviedata'}>                
                 <h2 id={'moviedataTitle'}> Movie Data!</h2>
                 <div id={'moviedataLis'}>
                     <ul id={'movieDataUl'}>

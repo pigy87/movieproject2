@@ -20,7 +20,7 @@ class Results extends Component {
             if (element.id == movieDataId) {
                 return element
             }
-            return console.log('handlovan click')
+            
         });
         this.setState({
             selectedMovie: movieData
@@ -35,17 +35,16 @@ class Results extends Component {
 
         return (
             <div className={'resultsAndEachMovie'}>
-                <div className={'resultsList'}>
-                <h2 id={'searchResultsTitle'}>Search Results!</h2>
-                    <ul>
-
+               
+                
+                <h2 id={'searchResultsTitle'}>Search Results!</h2>   
+                <div className={'resultsList'}>                 
                         {!this.props.results ? '' : this.props.results.map(eachMovie => {
                             return <ListResults key={eachMovie.id}
                                                 eachMovie={eachMovie}
                                                 handleClick={this.handleLiClick} />
                         }
-                        )}
-                    </ul>
+                        )}                    
                 </div>
 
                 <div className={'eachMovie'}>                   

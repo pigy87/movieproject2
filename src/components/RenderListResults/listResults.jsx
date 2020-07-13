@@ -14,13 +14,15 @@ class ListResults extends React.Component {
     render() {
         return (
             <div className={'picturesAndLis'}>
-                
-                <img className={'litlePictures'}
-                    src={this.props.eachMovie.backdrop_path ? `https://image.tmdb.org/t/p/w500${this.props.eachMovie.backdrop_path}`  : "https://image.tmdb.org/t/p/w500"+this.props.eachMovie.poster_path} alt=" " />
-                <li key={this.props.eachMovie.id}
-                    className={'lis'}
+                <p className={'pis'}
                     id={this.props.eachMovie.id}
-                    onClick={this.takeDataMovie}>{this.props.eachMovie.title ? this.props.eachMovie.title : this.props.eachMovie.name}</li>
+                    onClick={this.takeDataMovie}>{this.props.eachMovie.title ? this.props.eachMovie.title : this.props.eachMovie.name}</p>
+
+                <img className={'litlePictures'}
+                    src={this.props.eachMovie.backdrop_path ? `https://image.tmdb.org/t/p/w500${this.props.eachMovie.backdrop_path}`  : "https://image.tmdb.org/t/p/w500"+this.props.eachMovie.poster_path} alt=" " 
+                    onClick={this.takeDataMovie}
+                    id={this.props.eachMovie.id}/>
+                
             </div>
         );
     }

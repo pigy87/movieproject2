@@ -1,14 +1,22 @@
 #landingUl {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .landingLis {
     font-size: 25px;
+    font-weight: 540;
     color: coral;
     list-style: none;
+    opacity: 1;
+    transition: 0.7s;
+    font-family: 'Comic Sans MS,Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .landingLis:hover {
-    color: 'blue'
+    transition: ease-in;
+    color: cornflowerblue;
+    opacity: 0.6;
+    transition: 0.7s;
 }

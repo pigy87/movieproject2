@@ -4,21 +4,21 @@
 }
 
 ul {
-    text-align: left;
+    display: flex;
 }
 
 .resultsAndEachMovie {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .resultsList {
     display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .eachMovie {
-    width: 50%;
+    background-repeat: no-repeat;
 }
