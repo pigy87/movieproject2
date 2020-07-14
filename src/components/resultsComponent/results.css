@@ -17,6 +17,9 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    background-image: url(../../movieProject.jpg);
+    background-position: bottom;
+    border-top:1px solid orangered ;
 }
 
 .eachMovie {

@@ -9,11 +9,16 @@ class LandingPage extends React.Component {
         super(props);
         this.state=({
             searchChoose:false,
-            searchResults: null
+            searchResults: null,
+            twentyMovies:null
         })
         this.handleClickForChoose=this.handleClickForChoose.bind(this);
         this.handleClickFor20Movies=this.handleClickFor20Movies.bind(this);
         this.searchForMovies = this.searchForMovies.bind(this);
+    }
+
+    componentWillMount(){
+        this.searchFor20movies();
     }
 
     handleClickForChoose(){
@@ -25,6 +30,8 @@ class LandingPage extends React.Component {
         this.setState({
             searchChoose:false
         })
+
+        this.searchFor20movies();
     }
     searchForMovies(term) {
         databaseApi.getListsMovies(term)
@@ -34,14 +41,27 @@ class LandingPage extends React.Component {
             })
           })
       }
+
+      searchFor20movies(){
+        databaseApi.getTop20Movies()
+        .then(data=>{
+           this.setState({ twentyMovies:data})
+        })
+      }
     
     render() {
+        console.log(this.state.twentyMovies)
         return (
             <div>
                 <ul id={'landingUl'}>
                     <li className={'landingLis'} onClick={this.handleClickForChoose}>Search Movies!</li>
                     <li className={'landingLis'} onClick={this.handleClickFor20Movies}>Top 20 Movies!</li>
                 </ul>
+                
+                <div>
+                    {!this.state.twentyMovies?<h3>Loading!</h3>:"ubacit neki render ovde"}
+                </div>
+
                 <div id={'searchSection'}>
                     {this.state.searchChoose?<SearchBox searchForMovies={this.searchForMovies}/>:console.log('ubacit response 20 movies')}
                     {this.state.searchChoose?<Results results={this.state.searchResults}/>:console.log('ubacit response 20 movies2')}

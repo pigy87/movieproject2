@@ -1,29 +1,49 @@
-#moviedata {
-    background-image: url("https://image.tmdb.org/t/p/w500/oRyVYIqegDB5rWjfloeu1Zgk332.jpg");
-    opacity: 0.3;
+
+.moviedata{
+    backGround:#fff ;
+    background-repeat: no-repeat;       
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    color:whitesmoke ;
+    
+
+}
+
+.color-overlay{
+    width: 100%;
+    height: 100%;
+    background:#000;
+    opacity: .7;
+    position: absolute;
+
 }
 
 #moviedataTitle {
     color: coral;
     font-family: 'Comic Sans MS,Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 2;
 }
 
 #movieDataUl {
     margin-top: 25px;
     text-align: left;
+    
+    
 }
 
-#moviedataLis>ul>li {
+
+.lis {
     list-style: none;
-    color: black;
+    z-index: 2;
     font-family: 'Comic Sans MS,Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     width: 50%;
     margin: 0 auto;
-    padding-left: 0%;
-    opacity: 1;
+    padding-left: 0%;    
 }
-
 .prefix {
     font-size: 22px;
     padding-right: 5px;
@@ -35,6 +55,7 @@
     width: 50%;
     margin: 0 auto;
     text-align: left;
+    z-index: 2;
 }
 
 #overViewtitle {

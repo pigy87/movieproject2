@@ -8,6 +8,14 @@ const databaseApi = {
             .then(jsonResponse => {
                 return jsonResponse.results;
             })
+    },
+
+    getTop20Movies(){
+        return fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${id}&language=en-US&page=1`)
+        .then(response => response.json())
+            .then(jsonResponse => {
+                return jsonResponse.results;
+            })
     }
 }
 

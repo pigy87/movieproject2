@@ -11,9 +11,6 @@ class Results extends Component {
         })
         this.handleLiClick = this.handleLiClick.bind(this);
     }
-
-
-
     handleLiClick(movieDataId) {
 
         let movieData = this.props.results.find(element => {
@@ -29,14 +26,10 @@ class Results extends Component {
     }
 
     render() {
-
      //   console.log(this.props.results);
         //console.log(this.state.selectedMovie)
-
         return (
-            <div className={'resultsAndEachMovie'}>
-               
-                
+            <div className={'resultsAndEachMovie'}>                               
                 <h2 id={'searchResultsTitle'}>Search Results!</h2>   
                 <div className={'resultsList'}>                 
                         {!this.props.results ? '' : this.props.results.map(eachMovie => {
