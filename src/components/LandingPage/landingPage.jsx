@@ -12,6 +12,7 @@ class LandingPage extends React.Component {
             searchChoose: true,
             searchResults: null,
             twentyMovies: null,
+            inputBoxValue:null
 
         })
         this.handleClickForChoose = this.handleClickForChoose.bind(this);
@@ -37,7 +38,22 @@ class LandingPage extends React.Component {
         this.searchFor20movies();
 
     }
+
+    checkInputValue(value){
+        if(value){
+            this.setState({
+                inputBoxValue:value
+            })
+        }else{
+            this.setState({
+                inputBoxValue:null
+            })
+        }
+
+    }
+
     searchForMovies(term) {
+        this.checkInputValue(term)
         databaseApi.getListsMovies(term)
             .then(data => {
                 this.setState({
@@ -58,12 +74,11 @@ componentDidMount(){
 }
 
     render() {
-        console.log(this.state.searchChoose)
-        console.log(this.state.twentyMovies)
-        console.log(this.state.searchResults)
-
+        //console.log(this.state.searchChoose)
+       // console.log(this.state.twentyMovies)
+       
         const proba1=!this.state.twentyMovies ? <p>Loading</p> : <TopTwentyRenderList results={this.state.twentyMovies} />;
-        const proba2=!this.state.searchChoose ? proba1  :<Results results={this.state.searchResults} />
+        const proba2=!this.state.inputBoxValue ? proba1  :<Results results={this.state.searchResults} />
         return (
             <div>
                 <ul id={'landingUl'}>

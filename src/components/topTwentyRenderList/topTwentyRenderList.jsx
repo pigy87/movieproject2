@@ -6,7 +6,7 @@ class TopTwentyRenderList extends Component {
     constructor(props) {
         super(props);
         this.state = ({
-            selectedMovie: null
+            selectedMovie: this.props.results[0]
         })
         this.handleLiClick = this.handleLiClick.bind(this);
     }
@@ -25,11 +25,11 @@ class TopTwentyRenderList extends Component {
     }
 
     render() {
-     //   console.log(this.props.results);
+       console.log(this.props.results);
         //console.log(this.state.selectedMovie)
         return (
             <div className={'resultsAndEachMovie'}>                               
-                <h2 id={'searchResultsTitle'}>Top 20!</h2>   
+                <h2 id={'searchResultsTitle'}>Top 20 Movies Ever!</h2>   
                 <div className={'resultsList'}>                 
                         {!this.props.results ? '' : this.props.results.map(eachMovie => {
                             return <ListResults key={eachMovie.id}

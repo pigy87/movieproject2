@@ -6,7 +6,7 @@ import './eachMoviedata.css';
 class EachMovieData extends React.Component {
 
     render() {
-        console.log(this.props.data)
+       // console.log(this.props.data)
         // let example="https://image.tmdb.org/t/p/w500/oRyVYIqegDB5rWjfloeu1Zgk332.jpg";
         let backGround = {
             backgroundImage: "url(" + "https://image.tmdb.org/t/p/w500" + this.props.data.poster_path + ")",

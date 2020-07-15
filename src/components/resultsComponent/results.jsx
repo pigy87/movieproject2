@@ -7,7 +7,7 @@ class Results extends Component {
     constructor(props) {
         super(props);
         this.state = ({
-            selectedMovie: null
+            selectedMovie: this.props.results[0]
         })
         this.handleLiClick = this.handleLiClick.bind(this);
     }
