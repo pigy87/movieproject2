@@ -21,7 +21,7 @@ class EachMovieData extends React.Component {
                     <li className={'lis'} key={this.props.data.id + '1'}><span className={'prefix'}>Title:</span>{this.props.data.title}</li>
                     <li className={'lis'} key={this.props.data.id + '2'}><span className={'prefix'}>Relesed:</span>{this.props.data.release_date}</li>
                     <li className={'lis'} key={this.props.data.id + '3'}><span className={'prefix'}>Rate:</span>{this.props.data.vote_average}</li>
-                    <li className={'lis'} key={this.props.data.id + '4'}><span className={'prefix'}>Language:</span>{this.props.data.original_language}</li>
+                   
                 </ul>
                 <div id={'overViewDiv'}>
                     <h4 id={'overViewtitle'}>Overview:</h4>

@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from '../headerComponent/header';
 import LandingPage from '../LandingPage/landingPage';
+import Footer from '../Footer/footer';
 
 class App extends React.Component {
 
@@ -10,6 +11,7 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <LandingPage />
+        <Footer/>
       </div>
     );
   }

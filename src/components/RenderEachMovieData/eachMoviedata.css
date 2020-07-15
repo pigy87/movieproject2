@@ -1,24 +1,19 @@
-
-.moviedata{
-    backGround:#fff ;
-    background-repeat: no-repeat;       
-    background-position: center;
-    background-size: cover;
+.moviedata {
+    backGround: #fff;
+    background-repeat: repeat;
+    background-position: top;
     display: flex;
     position: relative;
     flex-direction: column;
-    color:whitesmoke ;
-    
-
+    color: whitesmoke;
 }
 
-.color-overlay{
+.color-overlay {
     width: 100%;
     height: 100%;
-    background:#000;
+    background: #000;
     opacity: .7;
     position: absolute;
-
 }
 
 #moviedataTitle {
@@ -30,10 +25,7 @@
 #movieDataUl {
     margin-top: 25px;
     text-align: left;
-    
-    
 }
-
 
 .lis {
     list-style: none;
@@ -42,11 +34,14 @@
     font-size: 20px;
     width: 50%;
     margin: 0 auto;
-    padding-left: 0%;    
+    padding-left: 0%;
+    text-align: center;
 }
+
 .prefix {
     font-size: 22px;
     padding-right: 5px;
+    color: coral;
 }
 
 #overViewDiv {
