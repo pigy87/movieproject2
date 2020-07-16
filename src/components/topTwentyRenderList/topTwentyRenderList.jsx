@@ -6,7 +6,7 @@ class TopTwentyRenderList extends Component {
     constructor(props) {
         super(props);
         this.state = ({
-            selectedMovie: this.props.results[0]
+            selectedMovie: null
         })
         this.handleLiClick = this.handleLiClick.bind(this);
     }
