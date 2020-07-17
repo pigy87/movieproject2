@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Ranchers");
 #searchResultsTitle {
     color: coral;
     margin-left: 20px;
     background-color: black;
     margin: unset;
+    font-family: 'Ranchers', 'cursive', 'Droid';
 }
 
 ul {

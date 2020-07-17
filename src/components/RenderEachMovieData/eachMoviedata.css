@@ -6,6 +6,57 @@
     position: relative;
     flex-direction: column;
     color: whitesmoke;
+    padding-bottom: 30%;
+    animation: moviedata ease 5s;
+    -webkit-animation: moviedata ease 5s;
+    -moz-animation: moviedata ease 5s;
+    -o-animation: fmoviedata ease 5s;
+    -ms-animation: moviedata ease 5s;
+}
+
+@keyframes moviedata {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes moviedata {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes moviedata {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes moviedata {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes moviedata {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .color-overlay {
@@ -25,6 +76,7 @@
 #movieDataUl {
     margin-top: 25px;
     text-align: left;
+    flex-direction: column;
 }
 
 .lis {
@@ -62,4 +114,26 @@
 
 #overViewP {
     font-size: medium;
+}
+
+.back-to-list {
+    color: coral;
+    font-size: large;
+    font-weight: 200;
+    z-index: 1;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: 1;
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

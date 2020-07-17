@@ -85,8 +85,8 @@ class LandingPage extends React.Component {
         console.log(this.state.searchChoose)
         console.log(this.state.twentyMovies)
 
-        const proba1 = !this.state.twentyMovies ? <p>Loading</p> : <TopTwentyRenderList results={this.state.twentyMovies} />;
-        const proba2 = !this.state.inputBoxValue ? proba1 : <Results results={this.state.searchResults} />
+       /* const proba1 = !this.state.twentyMovies ? <p>Loading</p> : <TopTwentyRenderList results={this.state.twentyMovies} />;
+        const proba2 = !this.state.inputBoxValue ? proba1 : <Results results={this.state.searchResults} />*/
         /*{!this.state.searchResults?proba1:proba2}*/
         /*<SearchBox searchForMovies={this.searchForMovies}/>*/
         let conditinal = () => {

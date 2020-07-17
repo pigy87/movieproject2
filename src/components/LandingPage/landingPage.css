@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Ranchers");
 #landingUl {
     display: flex;
     flex-direction: row;
@@ -8,12 +9,12 @@
 
 .landingLis {
     font-size: 25px;
-    font-weight: 540;
+    font-weight: 150;
     color: coral;
     list-style: none;
     opacity: 1;
     transition: 0.7s;
-    font-family: 'Comic Sans MS,Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Ranchers', cursive, 'Comic Sans MS,Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: black;
 }
 

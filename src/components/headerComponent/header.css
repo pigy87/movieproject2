@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Ranchers");
 #headerh1 {
-    color: coral;
-    font-family: 'Comic Sans MS,Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ff7f50;
+    font-family: 'Ranchers', cursive, 'Comic Sans MS,Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: black;
     margin: unset;
     border-bottom: 1px solid orange;

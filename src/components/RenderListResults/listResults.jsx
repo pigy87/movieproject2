@@ -8,7 +8,7 @@ class ListResults extends React.Component {
     }
 
     takeDataMovie(e){
-       this.props.handleClick(e.target.id)
+       this.props.selectMovieId(e.target.id)
     }
 
     render() {
